@@ -1,83 +1,75 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
-    background-image: url('https://images.unsplash.com/photo-1604076913837-52ab5629fba9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-image: url(gradient.png);
 }
-
-.header{
-    margin:8px;
+.body{
+    background-image: url(gradient\ \(3\).png);
+    height: 450px;
+    width: 320px;
+    margin: 100px auto;
+    border: 0.5px solid black;
+    border-radius: 8%;
+    box-shadow: 2px 4px 50px  gray;
+    padding: 20px;
+}
+.head{
+    color: white;
+    font-size: 24px;
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 3px gray;
+    text-transform:uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-family: sans-serif;
 }
-
-.mainbody{
-    height: 440px;
-    width: 280px;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 40px auto;
-    padding: 8px;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 4px gray;
-}
-
 .screen{
-    height: 1.8rem;
-    width:100%;
-    background-color: lightgray;
-    border: 2px solid gray;
-    border-radius: 4px;
-    box-shadow: 1px 1px 2px gray;
-    padding: 6px;
-    font-size: 16px;
+    background-color: white;
+    color: black;
+    height: 10%;
+    width: 100%;
+    margin: 8px 1px;
+    border-radius: 6px;
+    margin-bottom: 22px;
+    padding: 7px;
+    font-weight: 600;
+    font-size: 20px;
 }
-
-.screen:focus{
-    outline: none;
-}
-.heading{
-    text-align: center;
-    font-size: 1.25rem;
-    margin: 1px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .keypad{
-    border: 4px solid gray;
-    border-radius: 4px;
-    box-shadow: 1px 1px 2px gray;
-    margin: 8px;
-    padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
 }
-
 .key{
-    border: 1px solid gray;
-    height: 50px;
-    width: 45px;
-    padding: 4px;
-    margin: 7px auto;
-    box-shadow: 1px 1px 2px gray;
-    border-radius: 4px;
-    text-align: center;
-    background-color: lightgray;
+    color: gray;
+    background-color: white;
+    border-radius: 100%;
+    height: 55px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 600;
 }
-
+.key:hover{
+    cursor: pointer;
+}
+.screen:hover{
+    cursor:text;
+}
+.blue{
+    background-color: #0965c0;
+    color: white;
+}
+.red{
+    background-color: #f40752;
+    color: white;
+}
 .key:active{
-    transform: scale(0.9);
-    transition: 100ms;
-}
-.special{
-    height: 177.8%;
+    transform: scale(0.8);
+    transition-duration: 500ms;
+
 }
