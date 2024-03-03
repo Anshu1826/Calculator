@@ -12,6 +12,8 @@ for(let key of keys){
         screen.value=screen.value.slice(0,screen.value.length-1);
         else if(keyText==="+/-")
         screen.value=-1*screen.value;
+        else if(keyText==="X")
+        screen.value=screen.value+'*';
         else if(keyText==="="){
             try{
                 screen.value=eval(screen.value);
